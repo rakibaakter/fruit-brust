@@ -14,11 +14,24 @@
     <!-- tailwind and daisy ui set up -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom tailwind color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color':'#F85559'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class=" w-auto lg:max-w-7xl mx-auto p-5">
     <header class="mx-auto">
-        <nav class="w-auto md:bg-[#F85559] md:rounded-full md:text-white px-2 lg:px-5">
+        <nav class="w-auto md:bg-primary-color md:rounded-full md:text-white px-2 lg:px-5">
             <div class="navbar flex flex-row-reverse md:flex-row justify-around">
                 <div class="navbar-start hidden lg:block">
                     <ul class="flex md:gap-5">
@@ -142,43 +155,137 @@
         <!-- Deal of the day section -->
         <section>
             <!-- content details section -->
-            <div class="hero min-h-screen">
-                <div class="hero-content flex-col-reverse lg:flex-row lg:gap-32">
-                  <div>
-                    <h1 class="text-5xl font-bold">Deal of the day</h1>
-                    <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                  </div>
-                  <!-- counter section -->
-                  <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                    <div class="flex flex-col">
-                      <span class="countdown text-7xl">
-                        <span style="--value:15;"></span>&nbsp:
-                      </span>
-                      days
-                    </div> 
-                    <div class="flex flex-col">
-                      <span class="countdown text-7xl">
-                        <span style="--value:10;"></span>&nbsp:
-                      </span>
-                      hours
-                    </div> 
-                    <div class="flex flex-col">
-                      <span class="countdown text-7xl">
-                        <span style="--value:24;"></span>&nbsp:
-                      </span>
-                      min
-                    </div> 
-                    <div class="flex flex-col">
-                      <span class="countdown text-7xl">
-                        <span style="--value:53;"></span>
-                      </span>
-                      sec
+            <div class="hero mt-20 md:mt-40 lg:mt-60">
+                <div class="hero-content flex-col-reverse lg:flex-row lg:gap-32 text-center lg:text-left">
+                    <div>
+                        <h1 class="text-5xl font-bold">Deal of the day</h1>
+                        <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece
+                            of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                     </div>
-                  </div>
+                    <!-- counter section -->
+                    <div class="grid grid-flow-col md:gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown text-7xl">
+                                <span style="--value:15;"></span>&nbsp:
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown text-7xl">
+                                <span style="--value:10;"></span>&nbsp:
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown text-7xl">
+                                <span style="--value:24;"></span>&nbsp:
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown text-7xl">
+                                <span style="--value:53;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
+            <!-- products section -->
+            <div class="grid grid-cols-1 text-center md:grid-cols-2 md:text-left lg:grid-cols-4 gap-6 mt-10 items-center">
+                <!-- item 1 -->
+                <div class="card bg-base-100 shadow-xl border pt-10">
+                    <figure class="px-10">
+                        <img src="./images/fruit6.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <div class="divider"></div>
+                        <span>Apple</span>
+                        <div>
+                            <i class="fa-solid fa-star text-primary-color"></i>
+                            <i class="fa-solid fa-star-half-stroke text-primary-color"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                        </div>
 
-              <!-- products section -->
+                        <div class="card-actions">
+                            <button class="text-primary-color mt-2">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div class="card bg-base-100 shadow-xl border pt-10">
+                    <figure class="px-10">
+                        <img src="./images/fruit8.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <div class="divider"></div>
+                        <span>Dragon</span>
+                        <div>
+                            <i class="fa-solid fa-star text-primary-color"></i>
+                            <i class="fa-solid fa-star-half-stroke text-primary-color"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="text-primary-color mt-2">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 3 -->
+                <div class="card bg-base-100 shadow-xl border pt-10">
+                    <figure class="px-10">
+                        <img src="./images/fruit7.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <div class="divider"></div>
+                        <span>Orange</span>
+                        <div>
+                            <i class="fa-solid fa-star text-primary-color"></i>
+                            <i class="fa-solid fa-star-half-stroke text-primary-color"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="text-primary-color mt-2">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 4 -->
+                <div class="card bg-base-100 shadow-xl border pt-10">
+                    <figure class="px-10">
+                        <img src="./images/fruit9.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">12.90$ - 18.85$</h2>
+                        <div class="divider"></div>
+                        <span>Banana</span>
+                        <div>
+                            <i class="fa-solid fa-star text-primary-color"></i>
+                            <i class="fa-solid fa-star-half-stroke text-primary-color"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                            <i class="fa-solid fa-star" style="color:#FBC0A8;"></i>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="text-primary-color mt-2">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 md:mt-10 flex justify-center">
+                <button class="btn btn-error text-white flex">Shop Now</button>
+            </div>
+            
         </section>
     </main>
 
