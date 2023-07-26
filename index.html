@@ -34,7 +34,7 @@
         
         <nav class="md:bg-primary-color md:rounded-full md:text-white lg:px-5">
             <!-- menu for lg devices -->
-            <div class="navbar flex flex-row-reverse md:flex-row">
+            <div class="navbar flex flex-row-reverse md:flex-row ">
                 <div class="navbar-start hidden lg:block">
                     <ul class="flex gap-5">
                         <li><a>Home</a></li>
@@ -45,24 +45,22 @@
                 </div>
                 <!-- hamburger menu for sm and md devices -->
                 <div class="navbar-start dropdown block lg:hidden">
-                    <label tabindex="0" class="btn btn-ghost btn-circlet">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h7" /></svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52 text-black">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-40 text-black">
                         <li><a>Home</a></li>
                         <li><a>About US</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
-                        <li>
-                            <button class="bg-white p-1 rounded-full">
-                                <input type="text" placeholder="search here">
-                                <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
-                            </button>
-                        </li>
+                        <button class="bg-white rounded-full ">
+                            <input type="text" placeholder="search here">
+                            <i class="fa-solid fa-magnifying-glass text-gray-500 text-center"></i>
+                        </button>
                     </ul>
                 </div>
                 <div class="navbar-center">
